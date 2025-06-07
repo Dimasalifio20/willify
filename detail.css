@@ -1,0 +1,362 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .image-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+  
+  
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+  
+      header .logo {
+        display: flex;
+        align-items: center;
+      }
+  
+      header .logo img {
+        width: 80%;
+        height: 80%;
+        margin-right: 10px;
+      }
+  
+      header .logo h1 {
+        font-size: 30px;
+        font-weight: bold;
+        color: #5c3094;
+      }
+  
+      header nav {
+        display: flex;
+      }
+  
+      header nav a {
+        color: #000000;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 18px;
+      }
+  
+      main {
+        display: flex;
+        height: 80vh;
+        padding: 50px;
+        position: relative; /* add this to position the form on top of the video */
+      }
+      
+      main .box {
+        width: 80%;
+        max-width: 1200px;
+        margin: 60px auto;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        background-color: rgba(255, 255, 255, 0.85); /* add a semi-transparent background to the form */
+      }
+  
+      main .box .image {
+          text-align: center;
+          margin-bottom: 50px;
+      }
+  
+      main .box .image img {
+          width: 40%;
+          height: 40%;
+      }
+  
+      main .box .image p {
+          font-size: 20px;
+          font-weight: bold;
+          color: #000000;
+          margin-top: 10px;
+      }
+  
+      main .box .form {
+          display: flex;
+          flex-direction: column;
+      }
+  
+  main .box .form input {
+          padding: 10px;
+          margin-bottom: 20px;
+          border-radius: 40px;
+          border: 1px solid #000000;
+      }
+  
+  main .box .form button {
+          background-color: #000000;
+          color: white;
+          padding: 10px 20px;
+          border-radius: 40px;
+          border: none;
+          cursor: pointer;
+      }
+  
+    main .box .form .age-gender {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  main .box .form .age-gender input[type="number"] {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 40px;
+    border: 1px solid #000000;
+  }
+  
+  main .box .form .gender-buttons {
+    display: flex;
+  }
+  
+  main .box .form .gender-buttons .gender-button {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 40px;
+    border: 1px solid #000000;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  main .box .form .gender-buttons .gender-button.male {
+    color: blue;
+  }
+  
+  main .box .form .gender-buttons .gender-button.female {
+    color: pink;
+  }
+  
+  
+  .about-us {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .about-us h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .container {
+    display: flex;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .left {
+    width: 25%;
+    padding: 20px;
+    margin-right: 20px;
+  }
+  
+  .song-item-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+    overflow: hidden;
+  }
+  
+  .song-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .song-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .song-artist {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  
+  .search-bar {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .song-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .song-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .song-item-number {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+
+  .song-item-text{
+    font-weight: bold;
+  }
+  
+  .container-song {
+    height: 220px;
+    width: 70vw;
+    background-color: #eeeeee;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.container-song img {
+    height: 170px;
+    width: auto;
+    margin: 10px 20px;
+    border-radius: 30px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px; /* Reduced margin */
+    width: auto; /* Auto width to fit content */
+}
+
+.title {
+    font-size: 60px; /* Keep the same font size */
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.artist {
+    font-size: 30px; /* Keep the same font size */
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.line {
+    height: 80%;
+    width: 5px;
+    background-color: #000000;
+    border-radius: 2.5px;
+    margin: 0 10px; /* Reduced margin */
+}
+
+.song-info {
+    flex-grow: 1; /* Allow song-info to take up remaining space */
+    font-size: 1rem; /* Base font size */
+    color: #666;
+    margin: 10px; /* Reduced margin */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Allow content to wrap */
+    overflow: hidden; /* Prevent overflow */
+    text-overflow: ellipsis; /* Ellipsis for overflowed text */
+    text-align: justify;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 1200px) {
+    .song-info {
+        font-size: 0.9rem; /* Slightly smaller font size */
+    }
+}
+
+@media (max-width: 992px) {
+    .song-info {
+        font-size: 0.8rem; /* Smaller font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .song-info {
+        font-size: 0.7rem; /* Smaller font size */
+    }
+}
+
+@media (max-width: 576px) {
+    .song-info {
+        font-size: 0.6rem; /* Even smaller font size */
+    }
+}
+
+.scontainer-song {
+    margin-top: 15px;
+    height: 300px;
+    width: 70vw;
+    background-color: #eeeeee;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lyrics {
+    width: 90%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+
+
+
+  
+
+
+  
+
+  

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=768px, initial-scale=1.0">
+  <title>Register - Willify</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="Asset/Group 5.png" alt="Logo">
+    </div>
+    <nav>
+      <a href="index.html">Login</a>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="video-background">
+      <video autoplay loop muted>
+        <source src="Asset/back.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <form id="register-form">
+      <div class="box">
+        <div class="image">
+          <img src="Asset/Group 5.png" alt="Image">
+          <p>Your music, your Style.</p>
+        </div>
+        <div class="form">
+          <input type="text" id="username" placeholder="Username" required>
+          <input type="email" id="email" placeholder="Email or Phone Number">
+          <input type="password" id="password" placeholder="Password" required>
+          <input type="number" id="age" placeholder="Age" required>
+          
+          <div class="gender-buttons">
+            <input type="radio" name="gender" value="male" required> ♂
+            <input type="radio" name="gender" value="female" required> ♀
+          </div>
+
+          <button type="submit">Register</button>
+          <p>Already have an account? <a href="index.html">Login here</a></p>
+        </div>
+      </div>
+    </form>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
