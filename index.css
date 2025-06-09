@@ -200,11 +200,12 @@ main .box .form .gender-buttons .gender-button.female {
 .song-title {
   font-weight: bold;
   margin-bottom: 5px;
+  color: #f2f2f2;
 }
 
 .song-artist {
   font-size: 16px;
-  color: #666;
+  color: #f2f2f2;
 }
 
 .right {
@@ -250,6 +251,7 @@ main .box .form .gender-buttons .gender-button.female {
 
 .song-item-text{
   font-weight: bold;
+   color: #f2f2f2;
 }
 
 
